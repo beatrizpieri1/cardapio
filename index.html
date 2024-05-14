@@ -4,22 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+
     <title>Candy Shop</title>
 </head>
 <body>
 
-<header>
+    <header class="w-full h-[420px] bg-pink-200" >
+        <div class="w-full h-full flex flex-col justify-center items-center">
+          <img src="./assets/Gummy Bear logo.jpeg" alt="logoCandyShop" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 ">
 
-<div>
-    <img src="./assets/Gummy Bear logo.jpeg" alt="logoCandyShop"
-    class="w-32 h-32 rounded-full shadow-lg
-    hover:scale-110 duration-200"
-    >
-    <h1 class="text-3x1 mt-4 mb-2 font-bold">Candy Shop</h1>
+          <h1 class="text-3xl mt-1 mb-2 text-pink-600 uppercase font-semibold tracking-[0.1em] ">
+            candy shop</h1>
+        </div>
+      </header>
+
+      <h2 class="text-2xl uppercase text-center mt-6 tracking-[0.1em]"> our menu</h2>
+   
+      <!--MENU-->
+ <div id="menu">
+
+     <main class="grid grid-cols-1 gap-7 mx-auto max-w-7xl md:grid-cols-2 px-4 mb-16">
+        
+     <!--inicio produto-->
+    <div class="flex gap-2">
+
+        <img src="./assets/Candy Meadow Cupcakes.jpeg" 
+        alt="lollipopCupCake" class="w-28 h-28 rounded-md hover:scale-110 duration-200 cursor-pointer">
+      
+
+ <div>
+        <p class="font-semibold"> Lollipop Cupcake</p>
+        <p class="text-sm">vanilla pastry filled with strawberry cream with whipped cream on top</p>
+     
+      
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="text-pink-600 text-lg"> $8.00</p>
+        
+        <div class="flex justify-end">
+        <button class="add-to-cart-btn px-5 h-7 bg-pink-600 rounded"
+        data-name="Lollipop Cupcake"
+        data-price="$8.00"
+        >
+            <i class="fa-solid fa-cart-shopping text-white"></i>
+        </button>
+    </div>
+      </div>
+
+ </div>
+    </div>
+    <!-- fim produto-->
+
+
+
+     <!-- inicio produto-->
+         <div class="flex gap-2">
+
+            <img src="./assets/b4cf7805-4c09-4eb6-876b-87f51821e383.jpeg" 
+            alt="Donuts" class="w-28 h-28 rounded-md hover:scale-110 duration-200 cursor-pointer">
+          
+    
+     <div>
+            <p class="font-semibold"> Donuts</p>
+            <p class="text-sm">Traditional dunuts with pink white chocolate icing and sprinkles, filled with vanilla cream</p>
+         
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="text-pink-600 text-lg"> $3.00</p>
+
+            <div class="flex justify-end">
+            <button class="add-to-cart-btn px-5 h-7 bg-pink-600 rounded"
+            data-name="Donuts"
+            data-price="$3.00"
+            >
+            <i class="fa-solid fa-cart-shopping text-white"></i>
+            </button>
+        </div>
+        
+    </div>
+    
+     </div>
+        </div>
+        <!-- fim produto-->
+
+
+
+
+         <!-- inicio produto-->
+         <div class="flex gap-2">
+
+            <img src="./assets/Rico pastelito  😋 🧁🍦.jpeg" 
+            alt="ricoPastelito" class="w-28 h-28 rounded-md hover:scale-110 duration-200 cursor-pointer">
+          
+    
+     <div>
+            <p class="font-semibold"> Rico pastelito</p>
+            <p class="text-sm">vanilla pastry filled with strawberry cream with whipped cream on top</p>
+         
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="text-pink-600 text-lg"> $10.00</p>
+            
+            
+            <button class="add-to-cart-btn px-5 h-7 bg-pink-600 rounded"
+            data-name="Rico pastelito"
+            data-price="$10.00"
+            >
+            <i class="fa-solid fa-cart-shopping text-white"></i>
+            </button>
+          </div>
+    
+     </div>
+        </div>
+        <!-- fim produto-->
+
+
+
+
+
+         <!-- inicio produto-->
+         <div class="flex gap-2">
+
+            <img src="./assets/Ϝσσԃ Ιƈσɳ~🍥.jpeg" 
+            alt="strawberryPudding" class="w-28 h-28 rounded-md hover:scale-110 duration-200 cursor-pointer">
+          
+    
+     <div>
+            <p class="font-semibold"> Strawberry pudding</p>
+            <p class="text-sm">vanilla pastry filled with strawberry cream with whipped cream on top</p>
+         
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="text-pink-600 text-lg"> $15.00</p>
+            
+            <button class="add-to-cart-btn px-5 h-7 bg-pink-600 rounded"
+            data-name="Strawberry pudding"
+            data-price="$15.00"
+            >
+            <i class="fa-solid fa-cart-shopping text-white"></i>
+            </button>
+          </div>
+    
+     </div>
+        </div>
+        <!-- fim produto-->
+    
+     </main>
+
+
 </div>
 
-</header>
 
+      
+      <!--MENU-->
 
 
 </body>
