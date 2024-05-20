@@ -18,23 +18,25 @@
 <body>
 
     <header class="w-full h-[200px] bg-pink-200" >
-
-
-
+      
         <div class="w-full h-full flex flex-col justify-center items-center">
-          <img src="./assets/Gummy Bear logo.jpeg" alt="logoCandyShop" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 ">
-
+          
+          <img src="./assets/Gummy Bear logo.jpeg" alt="logoCandyShop" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 ">    
           <h1 class="text-3xl mt-2 mb-2 text-pink-600 uppercase font-semibold tracking-[0.1em] ">
             candy shop</h1>
         </div>
+
       </header>
+      
 
       <h2 class="text-2xl uppercase text-center mt-2 mb-5 tracking-[0.1em]"> our menu</h2>
    
-      <!--MENU-->
+
+  <!--MENU-->
+
  <div id="menu">
 
-     <main class="grid grid-cols-1 gap-7 mx-auto max-w-7xl md:grid-cols-2 px-4 mb-16">
+     <main class="grid grid-cols-1 gap-7 mx-auto max-w-7xl  md:grid-cols-2 px-4 mb-16">
         
      <!--inicio produto-->
     <div class="flex gap-2">
@@ -101,12 +103,9 @@
 
          <!-- inicio produto-->
          <div class="flex gap-2">
-
             <img src="./assets/ricoPastelito.png" 
             alt="ricoPastelito" class="w-28 h-28 rounded-md hover:scale-110 duration-200 cursor-pointer">
-          
-    
-     <div>
+         <div>
             <p class="font-semibold"> Rico pastelito</p>
             <p class="text-sm">Minty flavored dough with chocolate ganache topping and traditional dunuts</p>
          
@@ -120,77 +119,103 @@
             >
             <i class="fa-solid fa-cart-shopping text-white"></i>
             </button>
-          </div>
-    
+          </div>          
      </div>
         </div>
         <!-- fim produto-->
 
-
-
-    <h2 class="text-2xl uppercase text-center mt-2 mb-5 tracking-[0.1em] text-pink-600"> drinks</h2>
-
-    <!-- inicio produto-->
+         <!-- inicio produto-->
          <div class="flex gap-2">
+          <img src="./assets/rainbowCake.png" 
+          alt="rainbowCake" class="w-28 h-28 rounded-md hover:scale-110 duration-200 cursor-pointer">
+       <div>
+          <p class="font-semibold"> Rainbow cake</p>
+          <p class="text-sm">Moist layers infused with vibrant hues, frosted with creamy buttercream, and adorned with edible confetti.</p>
+       
+        <div class="flex items-center gap-2 justify-between mt-3">
+          <p class="text-pink-600 text-lg"> $15.00</p>
+          
+          
+          <button class="add-to-cart-btn px-5 h-7 bg-pink-600 rounded"
+          data-name="Rainbow cake"
+          data-price="$15.00"
+          >
+          <i class="fa-solid fa-cart-shopping text-white"></i>
+          </button>
+        </div>          
+   </div>
+      </div>
+      <!-- fim produto-->
+  </main>
 
-            <img src="./assets/pinkTea.png" 
-            alt="pinkTea" class="w-28 h-28 rounded-md hover:scale-110 duration-200 cursor-pointer">
+
+</div>
+
+
+<!-- BEBIDAS-->
+
+<div class="mx-auto max-w-7xl px-2 my-2">
+<h2 class="text-2xl uppercase text-center mt-2 mb-5 tracking-[0.1em] text-pink-600"> drinks</h2>
+</div>
+
+
+
+<div class="grid grid-cols-1 gap-7 mx-auto max-w-7xl  md:grid-cols-2 px-4 mb-16" id="menu">
+<!-- inicio produto-->
+     <div class="flex gap-2">
+        <img src="./assets/pinkTea.png" 
+        alt="pinkTea" class="w-28 h-28 rounded-md hover:scale-110 duration-200 cursor-pointer">
+      
+
+ <div>
+        <p class="font-semibold"> Pink tea</p>
+        <p class="text-sm">A delicious pink drink made with fresh strawberries, dried rose petals, hibiscus, and green tea. A pretty and tasty frozen treat to cool off in the summer.</p>
+     
+      <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="text-pink-600 text-lg"> $5.00</p>
+        
+        <button class="add-to-cart-btn px-5 h-7 bg-pink-600 rounded"
+        data-name="Pink tea"
+        data-price="$5.00"
+        >
+        <i class="fa-solid fa-cart-shopping text-white"></i>
+        </button>
+      </div>
+ </div>
+    </div>
+    <!-- fim produto-->
+
+
+        <!-- inicio produto-->
+        <div class="flex gap-2">
+            <img src="./assets/valentinesDrink.png" 
+            alt="valentines" class="w-28 h-28 rounded-md hover:scale-110 duration-200 cursor-pointer">
           
     
      <div>
-            <p class="font-semibold"> Pink tea</p>
-            <p class="text-sm">A delicious pink drink made with fresh strawberries, dried rose petals, hibiscus, and green tea. A pretty and tasty frozen treat to cool off in the summer.</p>
+            <p class="font-semibold"> Valentines</p>
+            <p class="text-sm">vanilla ice cream with strawberry sauce, whipped cream and heart confetti</p>
          
           <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="text-pink-600 text-lg"> $5.00</p>
+            <p class="text-pink-600 text-lg"> $10.00</p>
             
             <button class="add-to-cart-btn px-5 h-7 bg-pink-600 rounded"
-            data-name="Pink tea"
-            data-price="$5.00"
+            data-name="Valentines"
+            data-price="$10.00"
             >
             <i class="fa-solid fa-cart-shopping text-white"></i>
             </button>
           </div>
      </div>
         </div>
+
         <!-- fim produto-->
 
-
-            <!-- inicio produto-->
-            <div class="flex gap-2">
-
-                <img src="./assets/valentinesDrink.png" 
-                alt="valentines" class="w-28 h-28 rounded-md hover:scale-110 duration-200 cursor-pointer">
-              
-        
-         <div>
-                <p class="font-semibold"> Valentines</p>
-                <p class="text-sm">vanilla ice cream with strawberry sauce, whipped cream and heart confetti</p>
-             
-              <div class="flex items-center gap-2 justify-between mt-3">
-                <p class="text-pink-600 text-lg"> $10.00</p>
-                
-                <button class="add-to-cart-btn px-5 h-7 bg-pink-600 rounded"
-                data-name="Valentines"
-                data-price="$10.00"
-                >
-                <i class="fa-solid fa-cart-shopping text-white"></i>
-                </button>
-              </div>
-         </div>
-            </div>
-            <!-- fim produto-->
-
-        
-     </main>
-
-
-</div>
-
-
+<!-- FIM BEBIDAS-->
       
-      <!--MENU-->
-
+<!-- FIM MENU-->
+</div>
+<!-- FOOTER-->
 
 </body>
 </html> 
