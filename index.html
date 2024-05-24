@@ -25,15 +25,6 @@
           <h1 class="text-3xl mt-2 mb-2 text-pink-600 uppercase font-semibold tracking-[0.1em] ">
             candy shop</h1>
         </div>
-
-        <!--MENU BARS-->
-
-        <button class="font-bold py-2 px-4 rounded inline-flex items-center text-3xl text-pink-600 cursor-pointer" style="position: relative; top: -90%;">
-          <i class="fas fa-bars"></i>
-        </button>
-     
-        <!-- FIM MENU BARS-->
-
       </header>
 
       <h2 class="text-2xl uppercase text-center mt-2 mb-5 tracking-[0.1em]"> our menu</h2>
@@ -44,7 +35,29 @@
  <div id="menu">
 
      <main class="grid grid-cols-1 gap-7 mx-auto max-w-7xl  md:grid-cols-2 px-4 mb-16">
+
+<!--MENU MOBILE-->
+      <div class="menu-mobile" style="position: fixed; top:0; left: 0; padding: 10px; height: 100vh;
+      width: 80%;">
+        <div class="btn-fechar">
+          
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#" class="text-white text-3xl cursor-pointer">Candy</a></li>
+            <br>
+            <li><a href="#" class="text-white text-3xl cursor-pointer">Drinks</a></li>
+          </ul>
+        </nav>
+
+      </div>
         
+
+<!--MENU MOBILE-->
+
+
+
      <!--inicio produto-->
     <div class="flex gap-2">
 
@@ -238,6 +251,10 @@
     line-height: 50px; 
     font-size: 24px; 
     cursor: pointer; 
+  }
+
+  .menu-mobile{
+    background-color: rgb(219, 39, 119);
   }
 </style>
 
