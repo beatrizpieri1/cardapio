@@ -216,6 +216,32 @@
 <!-- FIM MENU-->
 </div>
 
+<!-- MODAL-->
+<div id="carrinho-modal" class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] hidden items-center justify-center">
+<div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+  <h2 class="uppercase font-semibold text-2xl mb-2">my orders</h2>
+
+<div id="items-carrinho" class="flex justify-between mb-2 flex-col"></div>
+<p class="font-bold">Total: <span id="total-compras">0.00</span></p>
+
+<p class="font-bold mt-2">Endereço de entrega:</p>
+<input type="text" placeholder="Digite seu endereço" id="address" class="w-full border-2 p-1 rounded my-1">
+
+<p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo! </p>
+
+<div class="flex items-center justify-between mt-5 w-full">
+  <button id="btn-fechar">Close</button>
+  <button id="btn-finalizar" class="bg-green-500 text-white px-4 py-1 rounded">finalize purchase</button>
+</div>
+
+</div>
+</div>
+
+
+<!-- FIM MODAL-->
+
+
+
 <!-- FOOTER-->
 <style>
   .botao-flutuante {
@@ -233,14 +259,19 @@
     line-height: 50px; 
     font-size: 24px; 
     cursor: pointer; 
-
   }
 </style>
 
-<button class="botao-flutuante hover:scale-110 duration-200 "><i class="fa-solid fa-basket-shopping" style="color: rgb(219 39 119);"></i></button>
 
+<p id="cart-count" class="z-[99] bg-pink-600 w-6 h-6 rounded-full text-white flex justify-center ml-auto fixed bottom-[70px] right-3">0</p>
+
+
+<button id="cart-btn" class="botao-flutuante hover:scale-110 duration-200 "><i class="fa-solid fa-basket-shopping" style="color: rgb(219 39 119);"></i>
+</button>
 
 <!-- FIM FOOTER-->
+
+<script src="scrip.js"></script>
 
 </body>
 </html> 
