@@ -25,3 +25,8 @@ closeModal.addEventListener("click", function(event){
     }
 })
 
+checkoutBtn.addEventListener("click", function(event){
+    if(event.target === addressInput === false){
+       addressWarning.style.display = "flex"
+    } 
+})
